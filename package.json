@@ -1,0 +1,32 @@
+{
+  "name": "hardhat_fund_me",
+  "version": "1.0.0",
+  "author": "caihaonan-practice",
+  "devDependencies": {
+    "@chainlink/contracts": "0.3.1",
+    "@nomicfoundation/hardhat-ethers": "3.0.2",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@nomiclabs/hardhat-waffle": "2.0.2",
+    "chai": "4.3.4",
+    "dotenv": "14.2.0",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "^6.13.1",
+    "hardhat": "2.8.3",
+    "hardhat-gas-reporter": "1.0.7",
+    "solhint": "^5.0.1",
+    "solidity-coverage": "0.7.18",
+    "undici": "5.28.4"
+  },
+  "dependencies": {
+    "hardhat-deploy": "0.9.29"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network sepolia",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage"
+  }
+}
